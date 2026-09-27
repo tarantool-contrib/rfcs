@@ -1,0 +1,30 @@
+name: Maintainer request
+description: Take over a module that is looking for a maintainer (RFC 0002).
+title: "Maintainer: <module>"
+labels: ["maintainer-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        See [RFC 0002](https://github.com/tarantool-contrib/rfcs/blob/main/text/0002-governance.md#changing-maintainers).
+        If the module still has an active maintainer, ask them directly in
+        the module's repository instead.
+  - type: input
+    id: module
+    attributes:
+      label: Module
+      placeholder: https://github.com/tarantool-contrib/<module>
+    validations:
+      required: true
+  - type: textarea
+    id: contributions
+    attributes:
+      label: Your contributions to the module
+      description: Links to merged pull requests, issues you triaged, or how you use the module.
+    validations:
+      required: true
+  - type: textarea
+    id: plans
+    attributes:
+      label: Plans
+      description: What you intend to do first — releases, pending pull requests, supported versions.

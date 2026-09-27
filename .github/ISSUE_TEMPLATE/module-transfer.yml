@@ -1,0 +1,65 @@
+name: Module transfer request
+description: Bring a Tarantool module into tarantool-contrib (RFC 0002).
+title: "Transfer: <module>"
+labels: ["module-transfer"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for bringing a module here. The process is described in
+        [RFC 0002](https://github.com/tarantool-contrib/rfcs/blob/main/text/0002-governance.md#joining-the-organization),
+        the requirements in
+        [RFC 0003](https://github.com/tarantool-contrib/rfcs/blob/main/text/0003-module-requirements.md).
+        Unchecked requirements are fine: list what is missing, and we agree
+        on whether to fix it before or after the transfer.
+  - type: input
+    id: repository
+    attributes:
+      label: Repository
+      placeholder: https://github.com/<you>/<module>
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What the module does
+      description: Who uses it, and how it relates to Tarantool.
+    validations:
+      required: true
+  - type: input
+    id: maintainers
+    attributes:
+      label: Maintainers
+      description: GitHub handles of the people who will maintain it here.
+      placeholder: "@you, @someone"
+    validations:
+      required: true
+  - type: dropdown
+    id: license
+    attributes:
+      label: License
+      options:
+        - BSD-2-Clause
+        - BSD-3-Clause
+        - MIT
+        - Apache-2.0
+        - Other (will be relicensed)
+    validations:
+      required: true
+  - type: checkboxes
+    id: requirements
+    attributes:
+      label: Requirements (RFC 0003, MUST)
+      options:
+        - label: README with description, quick start, supported Tarantool versions
+        - label: LICENSE file
+        - label: Build description in the repository root (rockspec, go.mod, ...)
+        - label: No git submodules needed to build
+        - label: Everything in the repository is in English
+        - label: CI runs linters and tests on pushes and pull requests, and is green
+        - label: Releases are Semantic Versioning tags built by CI
+  - type: textarea
+    id: gaps
+    attributes:
+      label: What is missing
+      description: Unchecked requirements and your plan for them.
