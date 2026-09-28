@@ -2,14 +2,15 @@ name: Module transfer request
 description: Bring a Tarantool module into tarantool-contrib (RFC 0002).
 title: "Transfer: <module>"
 labels: ["module-transfer"]
+assignees: ["bigbes"]
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for bringing a module here. The process is described in
-        [RFC 0002](https://github.com/tarantool-contrib/rfcs/blob/main/text/0002-governance.md#joining-the-organization),
+        [RFC 0002](https://github.com/tarantool-contrib/rfcs/blob/master/text/0002-governance.md#joining-the-organization),
         the requirements in
-        [RFC 0003](https://github.com/tarantool-contrib/rfcs/blob/main/text/0003-module-requirements.md).
+        [RFC 0003](https://github.com/tarantool-contrib/rfcs/blob/master/text/0003-module-requirements.md).
         Unchecked requirements are fine: list what is missing, and we agree
         on whether to fix it before or after the transfer.
   - type: input

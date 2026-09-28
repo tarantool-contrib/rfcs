@@ -1,0 +1,6 @@
+config:
+  # The metadata header of every RFC holds the discussion URL as plain text.
+  MD034: false
+  # Bold lines group the rules inside a section (RFC 0003); they are not
+  # meant to be headings.
+  MD036: false
