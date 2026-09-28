@@ -2,11 +2,12 @@ name: Maintainer request
 description: Take over a module that is looking for a maintainer (RFC 0002).
 title: "Maintainer: <module>"
 labels: ["maintainer-request"]
+assignees: ["bigbes"]
 body:
   - type: markdown
     attributes:
       value: |
-        See [RFC 0002](https://github.com/tarantool-contrib/rfcs/blob/main/text/0002-governance.md#changing-maintainers).
+        See [RFC 0002](https://github.com/tarantool-contrib/rfcs/blob/master/text/0002-governance.md#changing-maintainers).
         If the module still has an active maintainer, ask them directly in
         the module's repository instead.
   - type: input
