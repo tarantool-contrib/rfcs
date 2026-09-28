@@ -79,6 +79,7 @@ exactly this (*Tarantool module: test*).
 
 **Branches and releases**
 
+- The default branch is named `master`, as in the Tarantool repositories.
 - The default branch is protected against force-push and deletion.
 - Releases follow Semantic Versioning.
 - Release tags:
