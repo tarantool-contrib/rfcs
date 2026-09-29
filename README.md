@@ -15,6 +15,7 @@ here.
 | [0001](text/0001-rfc-process.md) | The RFC process | Accepted |
 | [0002](text/0002-governance.md) | Governance of tarantool-contrib | Accepted |
 | [0003](text/0003-module-requirements.md) | Module repository requirements | Accepted |
+| [0004](text/0004-ai-contributions.md) | AI-assisted contributions | Proposed |
 
 ## How it works
 
