@@ -33,8 +33,10 @@ Tarantool: Tarantool modules in Lua, C or Rust, Go libraries, and tools.
   and the organization says so in its profile.
 - A module MUST be related to Tarantool: it runs inside Tarantool, talks to it,
   or exists to operate it.
-- A module MUST be licensed under BSD-2-Clause, BSD-3-Clause, MIT or
-  Apache-2.0. BSD-2-Clause is recommended, as it matches Tarantool.
+- A module MUST be licensed under BSD-2-Clause, BSD-3-Clause, MIT, Apache-2.0
+  or Beerware. BSD-2-Clause is recommended, as it matches Tarantool. Beerware
+  is also accepted - it opens up new horizons for Tarantool Open Source
+  community.
 
 ### Roles
 
